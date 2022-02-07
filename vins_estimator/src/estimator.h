@@ -79,6 +79,7 @@ class Estimator
     Vector3d Ps[(WINDOW_SIZE + 1)];
     Vector3d Vs[(WINDOW_SIZE + 1)];
     Matrix3d Rs[(WINDOW_SIZE + 1)];
+    // Bas[frame_count]和Bgs[frame_count]为对应于id为frame_count这一帧图像的线加速度偏置和角速度偏置值
     Vector3d Bas[(WINDOW_SIZE + 1)];
     Vector3d Bgs[(WINDOW_SIZE + 1)];
     double td;
